@@ -1,0 +1,23 @@
+﻿<Window x:Class="xyekot.cat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xyekot"
+        mc:Ignorable="d"
+        Title="xyekot" Height="160" Width="250"
+        WindowStyle="None" AllowsTransparency="true" Background="Transparent" ResizeMode="NoResize" 
+        Closing="Window_Closing">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="37" Margin="0,123,0,0" Fill="#FFF482" VerticalAlignment="Top" Width="250"/>
+        <Image x:Name="DrugCat" Source="/img/cat.png" Stretch="Fill" MouseDown="DrugCat_MouseDown" Margin="0,0,0,37" Height="123" VerticalAlignment="Bottom"/>
+        <Label x:Name="Clicks" Content="0" Margin="0,132,157,0" HorizontalAlignment="Right" Width="74" Height="27" VerticalAlignment="Top"/>
+        <Label x:Name="Keys" Content="0" Margin="155,132,0,0" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Width="74" Height="27" VerticalAlignment="Top"/>
+        <Label x:Name="Total" Content="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="112" Height="27" VerticalAlignment="Top" Margin="0,123,0,0"/>
+        <Image Margin="0,134,228,0" Source="/img/mouse.png" Stretch="Fill" HorizontalAlignment="Right" Width="18" Height="23" VerticalAlignment="Top"/>
+        <Image Margin="223,134,0,0" Source="/img/keyboard.png" Stretch="Fill" HorizontalAlignment="Left" Width="24" Height="20" VerticalAlignment="Top"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="238,99,0,0" VerticalAlignment="Top" Background="Red" Width="12" FontSize="6" FontWeight="Bold" Click="Button_Click_1"/>
+        <Button Content="📌" HorizontalAlignment="Left" Margin="238,111,0,0" VerticalAlignment="Top" Background="#FFFFDE00" Width="12" Click="Button_Click" FontSize="6"/>
+
+    </Grid>
+</Window>

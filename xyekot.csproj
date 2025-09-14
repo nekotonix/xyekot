@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <PackageId>$(AssemblyName)</PackageId>
+    <Title>Xyekot</Title>
+    <Authors>nekotonix</Authors>
+    <Company>yet another bongo cat</Company>
+    <Description>This sus app is yet another clone of "Bongo Cat" from steam</Description>
+    <Copyright>nekotonix MIT</Copyright>
+    <PackageProjectUrl>xyekot.nekotonx.com</PackageProjectUrl>
+    <PackageIcon>lemaman.png</PackageIcon>
+    <ApplicationIcon>lemaman.ico</ApplicationIcon>
+    <AssemblyName>xyekot</AssemblyName>
+    <Product>xyekot</Product>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bb02f49867dcde31111fe43fa8af5e60_t.png" />
+    <None Remove="Mouse-Cursor-Click-Transparent-File.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="lemaman.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MouseKeyHook" Version="5.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\keyboard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\cat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\mouse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="lemaman.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

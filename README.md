@@ -1,5 +1,5 @@
 # xyekot
-"Bongo Cat" from steam sussy copy.
+"Bongo Cat" steam sussy copy.
 
 ## Building
 ```bash
@@ -8,7 +8,5 @@ cd xyekot
 ```
 Next you can open xyekot.sln in Visual Studio (or Rider for example) and build
 
-## TODO
-* fix not registered clicks in Task Manager and Visual Studio (mouse clicks)
-* add daily clicks
-* check shutdown save 
+## Known issues
+* Clicks are not detected in taskmgr and onscreen keyboard.

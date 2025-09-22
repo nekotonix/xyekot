@@ -9,15 +9,16 @@
         WindowStyle="None" AllowsTransparency="true" Background="Transparent" ResizeMode="NoResize" 
         Closing="Window_Closing">
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="37" Margin="0,123,0,0" Fill="#FFF482" VerticalAlignment="Top" Width="250"/>
+        <Rectangle HorizontalAlignment="Center" Height="34" Margin="0,123,0,0" Fill="#FFF482" VerticalAlignment="Top" Width="250"/>
         <Image x:Name="DrugCat" Source="/img/cat.png" Stretch="Fill" MouseDown="DrugCat_MouseDown" Margin="0,0,0,37" Height="123" VerticalAlignment="Bottom"/>
-        <Label x:Name="Clicks" Content="0" Margin="0,132,157,0" HorizontalAlignment="Right" Width="74" Height="27" VerticalAlignment="Top"/>
-        <Label x:Name="Keys" Content="0" Margin="155,132,0,0" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Width="74" Height="27" VerticalAlignment="Top"/>
-        <Label x:Name="Total" Content="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="112" Height="27" VerticalAlignment="Top" Margin="0,123,0,0"/>
+        <Label x:Name="Clicks" Content="0" Margin="0,131,157,0" HorizontalAlignment="Right" Width="74" Height="25" VerticalAlignment="Top"/>
+        <Label x:Name="Keys" Content="0" Margin="141,131,0,0" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Width="74" Height="25" VerticalAlignment="Top"/>
+        <Label x:Name="Total" Content="0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="112" Height="25" VerticalAlignment="Top" Margin="61,121,0,0"/>
         <Image Margin="0,134,228,0" Source="/img/mouse.png" Stretch="Fill" HorizontalAlignment="Right" Width="18" Height="23" VerticalAlignment="Top"/>
-        <Image Margin="223,134,0,0" Source="/img/keyboard.png" Stretch="Fill" HorizontalAlignment="Left" Width="24" Height="20" VerticalAlignment="Top"/>
-        <Button Content="x" HorizontalAlignment="Left" Margin="238,99,0,0" VerticalAlignment="Top" Background="Red" Width="12" FontSize="6" FontWeight="Bold" Click="Button_Click_1"/>
-        <Button Content="📌" HorizontalAlignment="Left" Margin="238,111,0,0" VerticalAlignment="Top" Background="#FFFFDE00" Width="12" Click="Button_Click" FontSize="6"/>
+        <Image Margin="211,134,0,0" Source="/img/keyboard.png" Stretch="Fill" HorizontalAlignment="Left" Width="24" Height="18" VerticalAlignment="Top"/>
+        <Button Content="x" x:Name="closeBtn" HorizontalAlignment="Left" Margin="238,145,0,0" VerticalAlignment="Top" Background="Red" Width="12" FontSize="6" FontWeight="Bold" Click="Close_Click" ToolTip="Закрывает приложение"/>
+        <Button Content="📌" x:Name="pinBtn" HorizontalAlignment="Left" Margin="238,134,0,0" VerticalAlignment="Top" Background="#FF736400" Width="12" Click="Pin_Click" FontSize="6" ToolTip="Закрепить кота"/>
+        <Button Content="📆" x:Name="toggleDailyBtn" HorizontalAlignment="Left" Margin="238,123,0,0" VerticalAlignment="Top" Background="#FF001B4E" Width="12" Click="Daily_Click" FontSize="6" ToolTip="Рекорд 0 и данные не сохранятся"/>
 
     </Grid>
 </Window>

@@ -19,6 +19,9 @@
     <Product>xyekot</Product>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <FileVersion>0.0.0.1</FileVersion>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <Version>0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

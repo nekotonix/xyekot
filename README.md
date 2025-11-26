@@ -5,8 +5,9 @@
 ```bash
 git clone https://github.com/nekotonix/xyekot
 cd xyekot
+dotnet build --configuration Release
 ```
-Next you can open xyekot.sln in Visual Studio (or Rider for example) and build
+Or just download and build in visual studio 2022 (or 2026)
 
 ## Known issues
 * Clicks are not detected in taskmgr and onscreen keyboard.
